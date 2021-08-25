@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>little Chefs - Contact Us</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="externalproject.css" type="text/css">
+    <script type="text/javascript">
+        function validate() {
+            var name = document.forms["myform"]["name"].value;
+            var subject = document.forms["myform"]["subject"].value;
+            var email = document.forms["myform"]["email"].value;
+            var message = document.forms["myform"]["message"].value;
+
+            if (name == "" || name.length < 2) {
+                alert("Please Enter A Name More Than 2 Characters");
+                return false;
+            }
+            if (subject == "" || subject.length < 5) {
+                alert("Please Enter A Subject More Than 5 Characters)");
+                return false;
+            }
+            if (email == "" || email.indexOf("@") == -1) {
+                alert("Please Enter A Valid E-mail Containing '@'");
+                return false;
+            }
+            if (message == "" || message.length < 20) {
+                alert("Please Insert A Message More Than 20 Characters");
+                return false;
+            }
+            alert("Form Submitted Successfully!")
+            return true;
+        }
+    </script>
+    <style>
+        a {
+            text-decoration: none;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <a href="home.html"><img src="littlechef.png" height="100" width="200" alt="Home"></a>
+    </header>
+    <nav>
+        <ul>
+            <b>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="safety.html">Safety Precautions</a></li>
+                <li><a href="#">Recipe Categories</a>
+                    <ul>
+                        <li><a href="breakfast.html">Breakfast</a></li>
+                        <li><a href="desserts.html">Desserts</a></li>
+                    </ul>
+                </li>
+                <li><a href="contactus.html">Contact Us</a></li>
+                <li><a href="signlog.html">Signup/Login</a></li>
+                <li class="search">
+                    <input type="text" name="" placeholder="Search...">
+                </li>
+            </b>
+        </ul>
+    </nav>
+    <main>
+        <div class="wrapper">
+            <h1>Contact Us</h1>
+            <h3>Have any questions? We'd love to hear from you.</h3>
+
+            <form action="contactus.html" name="myform" autocomplete="off" onsubmit="return validate()">
+                <div class="input_field">
+                    <input type="text" placeholder="Name" name="name">
+                </div>
+                <div class="input_field">
+                    <input type="text" placeholder="Subject" name="subject">
+                </div>
+                <div class="input_field">
+                    <input type="text" placeholder="E-mail" name="email">
+                </div>
+                <div class="input_field">
+                    <textarea id="message" placeholder="Message" name="message"></textarea>
+                </div>
+                <div class="btn">
+                    <input type="submit" value="Submit">
+                </div>
+            </form>
+        </div>
+    </main>
+    <footer>
+        <small><i>&copy; 2020 little Chefs, Inc.</i></small>
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,177 @@
+body{background-color: rgb(255, 215, 222); 
+    color: black;}
+header{text-align: center;
+    min-width: 1000px; 
+    padding-top: 10px; 
+    padding-bottom: 10px; 
+    background-color: white;}
+nav{width: 100%; 
+    height: 60px; 
+    min-width: 1000px;
+    background-color: rgb(185, 247, 255);
+    font-family: 'Courier New', Courier, monospace;
+    color: black; 
+    font-size: 15px;
+    line-height: 30px;
+    float: left;}
+nav ul{float: left;}
+nav ul li{float: left; 
+    list-style: none;
+    position: relative;}
+nav ul li a{display: block;
+    font-family: 'Courier New', Courier, monospace;
+    color: black; 
+    font-size: 15px;
+    padding: 5px 20px;}
+nav ul li ul{display: none;
+    position: absolute;
+    background-color: rgb(185, 247, 255);
+    border-radius: 0px 0px 6px 6px;}
+nav ul li:hover ul{display: block;}
+nav ul li ul li{border-radius: 4px;}
+nav ul li ul li a{padding: 5px 20px;}
+nav ul li ul li a:hover{padding: 5px 20px;
+    background-color: rgb(255, 215, 222);}
+.search{padding: 5px;
+    float: right;}
+h2{text-align: center;
+    margin-top: 5rem;
+    border-width: 2px; 
+    border-style: solid; 
+    border-color: white;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: rgb(152, 152, 207);
+    color: white;}
+footer{position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: white;
+    color: black;
+    text-align: center;}
+.container{display: flex;
+    align-items: center;
+    min-width: 1000px;
+    justify-content: center;}
+.boxx{text-align:center;}
+.cont{background-color: white;
+    width: 300px;
+    border: 15px solid rgb(228, 121, 139);
+    padding: 50px;
+    margin: auto;}
+.rbox{position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: 7rem;
+    transform: translate(-50%,-50%);
+    width: 1000px;
+    padding: 20px;
+    box-sizing: border-box;
+    background: white;
+    border-radius: 4px;
+    box-shadow: 0 5px 15px rgb(235, 156, 169);
+    display: flex;}
+.box .imgbox{width: 100px;}
+.box .content{margin-left: 20px;}
+.rbox .content h3{margin-left: 3rem;
+    padding-left: 0;}
+.grid{max-width: 2000px;
+    margin: auto;
+    background: white;
+    overflow: auto;}
+.gallery{margin: 6px;
+    border: 1px solid white;
+    float: left;
+    width: 400px;}
+.desc{padding: 15px;
+    font-size: 17px;
+    text-align: center;}
+.wrapper{position: absolute;
+    top: 64%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    max-width: 500px;
+    width: 100%;
+    background: white;
+    padding: 25px;
+    padding-right: 45px;
+    border-radius: 5px;
+    box-shadow: 4px 4px 2px rgb(235, 156, 169);}
+.wrapper h1{text-align: center;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    color: rgb(61, 7, 16);}
+.wrapper h3{text-align: center; 
+    font-size: 15px;
+    color: rgb(170, 73, 90);}
+.wrapper .input_field{margin-bottom: 10px;}
+.wrapper .input_field input[type="text"],
+.wrapper textarea{ width: 100%;
+    border: 1px solid black;
+    padding: 10px;}
+.wrapper textarea{height: 80px;
+    resize: none;}
+.wrapper .btn input[type="submit"]{
+    border: 0;
+    margin-top: 15px;
+    padding: 10px;
+    width: 100%;
+    background-color: rgb(255, 195, 205);
+    color: rgb(61, 7, 16); 
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    font-weight: bold;
+    cursor: pointer;}
+.form-box{width: 380px;
+    height: 480px;
+    position: relative;
+    margin: 6% auto;
+    background: white;
+    padding: 5px;
+    overflow: hidden;}
+.button-box{width: 220px;
+    margin: 35px auto;
+    position: relative;
+    box-shadow: 0 0 20px 9px #ff61241f;
+    border-radius: 30px;}
+.toggle-btn{padding: 10px 30px;
+    cursor: pointer;
+    background: transparent;
+    border: 0;
+    outline: none; 
+    position: relative;}
+#btn{top: 0;
+    left: 0;
+    position: absolute;
+    width: 110px;
+    height: 100%;
+    background: linear-gradient(to right, rgb(255, 104, 129), rgb(250, 167, 181));
+    border-radius: 30px;
+    transition: .5s;}
+.input-group{top: 180px;
+    position: absolute;
+    width: 280px;
+    transition: .5s;}
+.inputtfield{width: 100%;
+    padding: 10px 0;
+    margin: 5px 0;
+    border-left: 0;
+    border-top: 0;
+    border-right: 0;
+    border-bottom: 1px solid #999;
+    outline: none;
+    background: transparent;}
+.submit-btn{width: 85%;
+    padding: 10px 30px;
+    cursor: pointer;
+    display: block;
+    margin: 3rem auto;
+    background: linear-gradient(to right, rgb(255, 104, 129), rgb(250, 167, 181));
+    border: 0;
+    outline: none;
+    border-radius: 30px;}
+.check-box{margin: 30px 10px 30px 0;}
+#login{left: 50px;}
+#register{left: 450px;}
